@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3D Garden - Fadi Gorges</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #controls {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: white;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/",
+          "dat.gui": "https://unpkg.com/dat.gui@0.7.9/build/dat.gui.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="controls">
+      <p>
+        <u><b>CONTROLS</b></u>
+      </p>
+      <p>Mouse - Orbit Camera Controls</p>
+      <p>Left Click - Select Object</p>
+      <p>Right Click - Deselect Object</p>
+      <p>Left & Right Arrow Keys - Rotate Object</p>
+      <p>E - Change Edit Mode</p>
+    </div>
+    <script type="module" src="main.js" />
+  </body>
+</html>
